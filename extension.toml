@@ -1,0 +1,7 @@
+[extension]
+id = "go"
+name = "Go"
+version = "0.1.0"
+description = "Rich Go language support, test runner, formatting, and build tools"
+author = "biscuit-extensions"
+icon = "icon.png"
