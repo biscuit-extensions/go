@@ -1,7 +1,24 @@
 [extension]
 id = "go"
 name = "Go"
-version = "0.1.0"
-description = "Rich Go language support, test runner, formatting, and build tools"
-author = "biscuit-extensions"
+version = "0.2.0"
+description = "Go package discovery, go test & go run execution runner, and gopls LSP integration"
+author = "tomlin7"
 icon = "icon.png"
+
+[dependencies]
+python = []
+tools = [
+    "go",
+    "gopls"
+]
+
+[contributes]
+commands = [
+    { id = "go.run_file", title = "Go: Run Current File" },
+    { id = "go.run_package", title = "Go: Run Package" },
+    { id = "go.run_tests", title = "Go: Run All Workspace Tests" },
+    { id = "go.run_benchmarks", title = "Go: Run Benchmark Tests" },
+    { id = "go.build", title = "Go: Build Executable" },
+    { id = "go.mod_tidy", title = "Go: Mod Tidy" }
+]
